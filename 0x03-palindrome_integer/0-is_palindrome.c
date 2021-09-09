@@ -1,14 +1,10 @@
 #include "palindrome.h"
 
 /**
- * is_palindrome - Checks if a given integer is a palindrome
+ * is_palindrome - check if given integer is a palindrome
  *
- * @n: The integer to check
- *
- * Description: Checks if a given integer is a palindrome.
- * Single digit integers are palindromes
- *
- * Return: 1 if n is a palindrome, if not 0.
+ * @n: given integer to check
+ * Return: 1 if palindrome, 0 if not
  */
 int is_palindrome(unsigned long n)
 {
