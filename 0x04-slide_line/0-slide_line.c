@@ -15,7 +15,7 @@ void merge_left(int *arr, int size)
 	{
 		if (arr[i] == arr[i + 1])
 		{
-			arr[i + 1] *= 2;
+			arr[i + 1] = arr[i + 1] * 2;
 			arr[i] = 0;
 			++i;
 		}
@@ -36,7 +36,7 @@ void merge_right(int *arr, int size)
 	{
 		if (arr[i] == arr[i - 1])
 		{
-			arr[i - 1] *= 2;
+			arr[i - 1] = arr[i - 1] * 2;
 			arr[i] = 0;
 			--i;
 		}
@@ -51,20 +51,20 @@ void merge_right(int *arr, int size)
  */
 void go_left(int *arr, int size)
 {
-	int i, tmp;
+	int i, temp;
 
 	for (i = 1; i < size; i++)
 	{
 		if (arr[i] != 0)
 		{
-			tmp = i;
+			temp = i;
 			while (arr[i - 1] == 0 && i > 0)
 			{
 				arr[i - 1] = arr[i];
 				arr[i] = 0;
 				--i;
 			}
-			i = tmp;
+			i = temp;
 		}
 	}
 }
@@ -77,20 +77,20 @@ void go_left(int *arr, int size)
  */
 void go_right(int *arr, int size)
 {
-	int i, tmp;
+	int i, temp;
 
 	for (i = size - 2; i + 1 > 0; i--)
 	{
 		if (arr[i] != 0)
 		{
-			tmp = i;
+			temp = i;
 			while (arr[i + 1] == 0 && i < size - 1)
 			{
 				arr[i + 1] = arr[i];
 				arr[i] = 0;
 				++i;
 			}
-			i = tmp;
+			i = temp;
 		}
 	}
 }
