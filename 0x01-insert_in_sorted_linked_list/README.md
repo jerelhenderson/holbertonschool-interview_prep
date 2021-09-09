@@ -1,5 +1,5 @@
 # Holberton School - Interview Prep
-## 0x00 - C (Linked List Cycle)
+## 0x00 - C (Insert in sorted linked list)
 
 ### Purpose
 This C programming language project covers
@@ -12,4 +12,4 @@ This C programming language project covers
 ### File List
 | Program	  | Description						     |
 | --------------- |:--------------------------------------------------------:|
-| 0-insert_number.c  | function inserts number into sorted singly linked list |
+| 0-insert_number.c  | inserts a number into a sorted singly linked list |
