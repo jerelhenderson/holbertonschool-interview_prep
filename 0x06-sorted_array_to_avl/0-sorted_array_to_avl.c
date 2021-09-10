@@ -41,8 +41,8 @@ avl_t *create_avl(int *arr, int beg, int end, avl_t *parent)
 	mid = (beg + end) / 2;
 	root_node = create_node(arr[mid], parent);
 
-	root_node->left = create_avl(arr, beg, mid - 1, root);
-	root_node->right = create_avl(arr, mid + 1, end, root);
+	root_node->left = create_avl(arr, beg, mid - 1, root_node);
+	root_node->right = create_avl(arr, mid + 1, end, root_node);
 
 	return (root_node);
 }

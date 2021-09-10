@@ -1,5 +1,5 @@
-#ifndef BINARY_TREE_H
-#define BINARY_TREE_H
+#ifndef ARRAY_TO_AVL_H
+#define ARRAY_TO_AVL_H
 
 /* standard libraries */
 #include <stdlib.h>
