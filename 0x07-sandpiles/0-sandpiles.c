@@ -2,8 +2,8 @@
 
 
 /**
- * sandpiles_sum: create a stable sandpile grid
- * 
+ * sandpiles_sum - create a stable standpile grid
+ *
  * @grid1: first given grid
  * @grid2: second given grid
  */
@@ -18,16 +18,15 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 	{
 		if (stable_grid(grid1) == 1)
 			return;
-		else
-			merge_grid(grid1);
-			print_grid(grid1);	
+		merge_grid(grid1);
+		print_grid(grid1);
 	}
 }
 
 /**
- * stable_grid: check that no grid cell contains more than 3 grains
+ * stable_grid - grid contains less than 3 grains
  *
- * @grid: grid to check
+ * @grid: given grid
  * Return: 1 if stable, 0 if not
  */
 int stable_grid(int grid[3][3])
@@ -42,7 +41,7 @@ int stable_grid(int grid[3][3])
 }
 
 /**
- * merge_grid: function stabilizes first given grid
+ * merge_grid - function stabilizes first given grid
  *
  * @grid: given grid
  */
@@ -72,7 +71,7 @@ void merge_grid(int grid[3][3])
 }
 
 /**
- * print_grid: function prints grid
+ * print_grid - function prints grid
  *
  * @grid: given grid
  */
